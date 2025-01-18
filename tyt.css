@@ -3,31 +3,30 @@
     padding:0;
 }
 .container{
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 250px;
     width:60%;
     height: 700px;
-    background-color: rgb(234, 226, 217);
+    background-color: rgb(246, 239, 239);
 }
 #h1{
-    font-size: 40px;
+    font-size: 60px;
     padding:10px;
     background-color: azure;
 }
-#card{
-    margin-left: 30px;
+#text{
+    margin-top: 10px;
+    margin-left: 20px;
     width:600px;
-    background-color: rgb(245, 245, 170);
+    overflow: hidden;
     height:200px;
-    border: 2px solid grey;
-    border-radius: 5px;
 }
 #boxes{
     margin-top: 5px;
     margin-left: 40px;
     width:600px;
     position: relative;
-    bottom: 500px;
+    bottom: 440px;
 }
 .box{
     width: 40px;
@@ -39,17 +38,19 @@
     border-radius: 5px;
     align-content: center;
     cursor: pointer;
+    position: relative;
+    top: 180px;
 }
 #set{
     position: relative;
     bottom: 180px;
     left:650px;
     width: 220px;
-    height: 500px;
+    height: 250px;
     background-color: rgb(252, 249, 245);
     padding: 10px;
 }
-#stop{
+#start{
     margin: 10px 0 10px 0;
     padding: 2px;
     border-radius: 5px;
@@ -80,4 +81,181 @@
 }
 .set{
     padding: 2px;
+}
+@media (max-width:1300px){
+    .container{
+        margin-left: 150px;
+        width: 720px;
+    }
+    #set{
+        position: relative;
+        left:460px;
+        bottom: 200px;
+    } 
+    #text{
+        width:420px;
+        overflow: hidden;
+        height:200px;
+    }
+    #boxes{
+        margin-left: 20px;
+        width:420px;
+    }
+}
+@media (max-width:1200px){
+    .container{
+        margin-left: 30px;
+        width: 620px;
+    }
+    #set{
+        position: relative;
+        left:360px;
+        bottom: 200px;
+    } 
+    #text{
+        margin-top: 5px;
+        width:320px;
+        height:200px;
+    }
+    #boxes{
+        margin-left: 20px;
+        width:320px;
+    }
+}
+@media (max-width:700px){
+    .container{
+        margin-left: 10px;
+        width: 580px;
+    }
+    #set{
+        position: relative;
+        left:300px;
+        bottom: 200px;
+    } 
+    #text{
+        margin-top: 5px;
+        width:250px;
+        overflow: hidden;
+    }
+    #boxes{
+        margin-left: 20px;
+        width:250px;
+    }
+    .box{
+        width: 30px;
+        height: 30px;
+    }
+}
+@media (max-width:600px){
+    .container{
+        margin-left: 5px;
+        width: 480px;
+    }
+    #set{
+        position: relative;
+        left:220px;
+        bottom: 200px;
+    } 
+    #text{
+        margin-top: 5px;
+        margin-left: 10px;
+        width:200px;
+        overflow: hidden;
+    }
+    #boxes{
+        margin-left: 10px;
+        width:200px;
+    }
+    .box{
+        width: 25px;
+        height: 25px;
+    }
+}
+@media (max-width:500px){
+    .container{
+        width: 390px;
+    }
+    #set{
+        position: relative;
+        left:180px;
+        bottom: 200px;
+        width: 180px;
+    } 
+    #text{
+        margin-top: 5px;
+        margin-left: 3px;
+        width:170px;
+    }
+    #boxes{
+        margin-left: 3px;
+        width:170px;
+    }
+    #start{
+        width: 170px;
+        height: 30px;
+    }
+}
+@media (max-width:400px){
+    .container{
+        width: 100%;
+    }
+    #set{
+        position: relative;
+        left:30px;
+        top: 130px;
+        width: 180px;
+    }
+    #text{
+        margin-top: 5px;
+        margin-left: 3px;
+        width:80%;
+        height: 100px;
+    }
+    #boxes{
+        width:80%;
+        margin-left: 3px;
+    }
+    .box{
+        width: 20px;
+        height: 20px;
+    }
+}
+@media (max-width:300px){
+    .container{
+        width: 100%;
+    }
+    #set{
+        left:10px;
+        top: 190px;
+        width: 60%;
+    }
+    #h1{
+        font-size: 30px;
+    }
+    #start{
+        margin: 5px 0 5px 0;
+        width: 70px;
+        height: 25px;
+        font-size: 10px;
+    }
+    .stats{
+        margin-right: 20px;
+    }
+    #Hits{
+        margin-right: 60px; 
+    }
+    #miss{
+        margin-right: 40px; 
+    }
+    #Acc{
+        margin-right: 25px; 
+    }
+    #reset{
+        margin: 5px 0 0 30px;
+    }
+}
+@media (max-width:300px){
+    #set{
+        top: 220px;
+    }
 }
